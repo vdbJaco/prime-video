@@ -1,0 +1,197 @@
+:root {
+  --primecol: rgb(14, 23, 48);
+  --secondcol: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(https://i.redd.it/4fxxbm4opjd31.jpg);
+  background-color: black;
+}
+
+.bgfilter {
+  z-index: -1;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 50px 1fr;
+  gap: 0px;
+  width: 80%;
+  height: 70vh;
+  margin: 15vh auto;
+  background-color: var(--primecol);
+  border-radius: 30px;
+}
+
+.topnav {
+  display: flex;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  padding: 0% 2%;
+  color: var(--secondcol);
+}
+
+.logo {
+  width: auto;
+  height: 110%;
+  margin-top: 10px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 16.5%;
+}
+
+.searchbar p {
+  width: 0px;
+  border-bottom: 1px solid var(--secondcol);
+  opacity: 80%;
+}
+
+.searchbar p:hover {
+  border-bottom: 1px solid var(--secondcol);
+  width: 100%;
+  transition: 0.4s;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.profilepic {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+  opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  grid-column: 1;
+  grid-row: 2;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  padding: 20% 0px 0% 10%;
+  border-right: 1px solid rgba(255, 255, 255, 0.096);
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.shows {
+  display: flex;
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 1%;
+  width: 100%;
+  height: 100%;
+}
+
+.showimg {
+  width: 15%;
+  height: 70%;
+  background-color: yellow;
+  border-radius: 15px;
+}
+
+#show1 {
+  margin-top: 0%;
+  background-image: url(https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6408f6e7b5811271dc883aa8_batman-min.png);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#show2 {
+  margin-top: 5%;
+  background-image: url(https://egoamo.co.za/cdn/shop/products/The_Matrix_Movie_Poster_EgoAmo_Posters_530x@2x.jpg?v=1574998139);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#show3 {
+  margin-top: 0%;
+  background-image: url(https://img.fruugo.com/product/6/53/29794536_max.jpg);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#show4 {
+  margin-top: 10%;
+  background-image: url(https://cdn.cinematerial.com/p/297x/2afqhdxx/oppenheimer-movie-poster-md.jpg?v=1683305737);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#show5 {
+  margin-bottom: 5%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVxNbfYwQ05f1xrhx7-rB09QHPvMVVFIKaNg&usqp=CAU);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#show6 {
+  margin-top: 5%;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/04eafb25626631.5634844b7293f.jpg);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#snavit {
+  margin-top: 20%;
+}
+
+#snavit:hover {
+  opacity: 50%;
+}
+
+#show1:hover,
+#show2:hover,
+#show3:hover,
+#show4:hover,
+#show5:hover,
+#show6:hover {
+  background-color: blue;
+  margin: 0px 0px;
+  height: 80%;
+  width: 20%;
+  transition: 0.5s;
+}
